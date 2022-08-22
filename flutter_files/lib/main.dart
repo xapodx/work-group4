@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_files/screens/homepage.dart';
+
+import 'Screens/Homepage.dart';
+import 'Screens/newCourse.dart';
 
 void main() {
-  runApp( MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatefulWidget {
-
   @override
   State<MyApp> createState() => _MyAppState();
 }
@@ -17,9 +18,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Home',
-      home: Homepage(),
+      home: NewCourse(),
     );
   }
 }
-
-
